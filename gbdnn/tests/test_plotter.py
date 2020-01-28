@@ -22,7 +22,7 @@ class PlotterTest(unittest.TestCase):
         self.plotter1.smooth(self.x, self.y)
         self.assertFalse(np.all(self.plotter1.model.robust_weights == np.ones((n, 1))))
 
-        self.plotter2.smooth(self.x, self.y, iterations=10)
+        self.plotter2.smooth(self.x, self.y, iteration=10)
         self.assertTrue(np.all(self.plotter2.model.robust_weights == np.ones((n, 1))))
 
     def test_get_cd_data(self):
@@ -32,7 +32,7 @@ class PlotterTest(unittest.TestCase):
         self.assertListEqual([y.shape[0], y.shape[0]], [50, 50])
         self.assertListEqual([z.shape[0], z.shape[0]], [50, 50])
 
-        self.plotter2.smooth(self.x, self.y, iterations=30)
+        self.plotter2.smooth(self.x, self.y, iteration=30)
         x, y, z = self.plotter2.get_cd_data(num=100)
         self.assertListEqual([x.shape[0], x.shape[0]], [100, 100])
         self.assertListEqual([y.shape[0], y.shape[0]], [100, 100])
@@ -43,7 +43,7 @@ class PlotterTest(unittest.TestCase):
         ax1 = self.plotter1.get_plot(formatter='surface')
         ax2 = self.plotter1.get_plot(formatter='flat')
 
-        self.plotter2.smooth(self.x, self.y, iterations=30)
+        self.plotter2.smooth(self.x, self.y, iteration=30)
         ax3 = self.plotter2.get_plot(formatter='surface')
         ax4 = self.plotter2.get_plot(formatter='flat', vmin=0, vmax=25)
 
