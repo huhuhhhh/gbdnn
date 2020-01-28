@@ -7,6 +7,7 @@ from gbdnn.plotter import Plotter
 
 dir_test_data = os.path.join(os.path.dirname(__file__), 'test.json')
 
+
 class PlotterTest(unittest.TestCase):
 
     def setUp(self):
