@@ -59,7 +59,12 @@ class Plotter:
                 complexion diagram.
         """
         if formatter.startswith('f'):
-            pass
+            plt = self._get_flat_plot(**kwargs)
+        elif formatter.startswith('s'):
+            plt = self._get_surface_plot(**kwargs)
+        else:
+            raise ValueError("Invalid formatter to return figure!")
+        return plt
 
     def show(self, *args, **kwargs):
         """
