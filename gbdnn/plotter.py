@@ -105,8 +105,8 @@ class Plotter:
             xticklabel.set_fontsize(24)
             yticklabel.set_fontsize(24)
 
-        ax.set_xlabel('$X_{Bulk}\ /\ X_{Max\ Solubility}$', fontsize=30)
-        ax.set_ylabel('$T\ /\ T_{m}$', fontsize=30)
+        ax.set_xlabel('$X\ /\ X_{\\rm Max}$', fontsize=30)
+        ax.set_ylabel('$T\ /\ T_{\\rm m}$', fontsize=30)
 
         ax.plot(bound_x, bound_y, color='k', label='solidus line')
         ax.fill_between(np.concatenate((bound_x, np.ones_like(bound_x))),
