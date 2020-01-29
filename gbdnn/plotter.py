@@ -145,8 +145,8 @@ class Plotter:
             yticklabel.set_fontsize(24)
             zticklabel.set_fontsize(24)
 
-        ax.set_xlabel('$T\ /\ T_{m}$', fontsize=24, labelpad=24)
-        ax.set_ylabel('$X_{Bulk}\ /\ X_{Max\ Solubility}$', fontsize=24, labelpad=24)
+        ax.set_xlabel('$T\ /\ T_{\\rm m}$', fontsize=24, labelpad=24)
+        ax.set_ylabel('$X\ /\ X_{\\rm Max}$', fontsize=24, labelpad=24)
         ax.tick_params('z', pad=10)
 
         return plt
