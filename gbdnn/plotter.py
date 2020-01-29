@@ -88,7 +88,7 @@ class Plotter:
         bound_y = np.array(temperatures) / max(temperatures)
 
         import matplotlib.pyplot as plt
-        plt.switch_backend('agg')
+        # plt.switch_backend('agg')
 
         if cmap is None:
             cmap = plt.cm.colors.LinearSegmentedColormap.from_list('parula',
@@ -124,7 +124,7 @@ class Plotter:
                 Larger value will result in figure of higher resolution.
         """
         import matplotlib.pyplot as plt
-        plt.switch_backend('agg')
+        # plt.switch_backend('agg')
         import mpl_toolkits.mplot3d.axes3d as p3
         fig = plt.figure(figsize=(12, 8))
         ax = p3.Axes3D(fig)

@@ -41,12 +41,12 @@ class PlotterTest(unittest.TestCase):
 
     def test_get_plot(self):
         self.plotter1.smooth(self.x, self.y)
-        ax1 = self.plotter1.get_plot(formatter='surface')
-        ax2 = self.plotter1.get_plot(formatter='flat')
+        # ax1 = self.plotter1.get_plot(formatter='surface')
+        # ax2 = self.plotter1.get_plot(formatter='flat')
 
         self.plotter2.smooth(self.x, self.y, iteration=30)
-        ax3 = self.plotter2.get_plot(formatter='surface')
-        ax4 = self.plotter2.get_plot(formatter='flat', vmin=0, vmax=25)
+        # ax3 = self.plotter2.get_plot(formatter='surface')
+        # ax4 = self.plotter2.get_plot(formatter='flat', vmin=0, vmax=25)
 
         self.assertRaises(ValueError, self.plotter2.get_plot, 'null')
 
