@@ -2,7 +2,7 @@
 
 This repo contains the data and code for our recent work:
 
-C. Hu, Y. Zuo, C. Chen, S. Ong, J. Luo, Genetic algorithm-guided deep learning of grain boundary diagrams: Addressing the challenge of five degrees of freedom, Materials Today, Volume 38, September 2020, Pages 49-57.
+C. Hu, Y. Zuo, C. Chen, S. Ong, J. Luo, Genetic algorithm-guided deep learning of grain boundary diagrams: Addressing the challenge of five degrees of freedom, Materials Today, Volume 38, September 2020, Pages 49-57. https://doi.org/10.1016/j.mattod.2020.03.004
 
 This repo provides three single-task deep neural networks to predict three GB properties as a function of five crystallographic degrees of freedom (DOFs):
 
