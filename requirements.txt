@@ -1,6 +1,6 @@
 monty==3.0.2
 scikit-learn==0.21.2
-tensorflow==1.15.0
+tensorflow==2.7.2
 keras==2.3.0
 numpy==1.18.1
 scipy==1.4.1
